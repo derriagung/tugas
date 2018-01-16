@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="shortcut icon" href="teen.jpg">
+<title>My Bottle Costum | @7teeneds</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="uts.css" type="text/css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+
+<div class="topnav">
+  <a href="index.html"><h3>Home</h3></a>
+  <a href="gambar.html"><h3>Gallery</h3></a>
+  <a href="test.html"><h3>Hasil Testimoni</h3></a>
+  <a href="bayar.html"><h3>Dukungan Pembayaran</h3></a>
+  <a href="kontak.html"><h3>Kontak</h3></a>
+  <a href="pembelian.html"><h3>Cara Pemesanan</h3></a>
+</div>
+<br>
+<br>
+<h3><center>GAMBAR DAN TULISAN BISA REQUEST</center></h3>
+<div class="w3-content w3-section" style="max-width:500px">
+  <img class="mySlides" src="gambar/MyBootle.png" style="width:100%">
+  <img class="mySlides" src="gambar/MyBootle1.png" style="width:100%">
+  <img class="mySlides" src="gambar/MyBootle2.png" style="width:100%">
+  <img class="mySlides" src="gambar/MyBootle3.png" style="width:100%">
+  <img class="mySlides" src="gambar/MyBootle4.png" style="width:100%">
+  <img class="mySlides" src="gambar/MyBootle5.png" style="width:100%">
+  <img class="mySlides" src="gambar/MyBootle6.png" style="width:100%">
+  <img class="mySlides" src="gambar/MyBootle7.png" style="width:100%">
+  <img class="mySlides" src="gambar/MyBootle8.png" style="width:100%">
+  <img class="mySlides" src="gambar/MyBootle9.png" style="width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 3000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+</html>
